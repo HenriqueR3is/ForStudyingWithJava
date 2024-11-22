@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 import static com.Chines.cliente.model.Status.DONE;
 import static com.Chines.cliente.model.Status.IN_PROGRESS;
@@ -29,9 +30,14 @@ public class MainService {
         return taskRepository.save(mainEntity);
     }
 
+    // Lista todos
     public List<MainEntity> getAllTasks() {
         return taskRepository.findAll();
     }
+    // Lista por id
+//    public Optional<MainEntity> getOneTask() {
+//        return taskRepository.findById(id);
+//    }
 
     // Tipo
 //    public Equipment updateEquipment(Long id, Equipment updatedEquipment) {

@@ -23,11 +23,12 @@ import java.util.List;
 public abstract class MainUser implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
+    // Atributos
     private String id;
     private String login; // nome
     private String password; // numero
     private UserRole role; // tipo
-
+    // Construtor
     public MainUser(String login, String password, UserRole role){
         this.login = login;
         this.password = password;

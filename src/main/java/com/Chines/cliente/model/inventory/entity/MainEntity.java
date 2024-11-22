@@ -40,6 +40,7 @@ public class MainEntity {
     public MainEntity() {
     }
 
+    // Construtor
     public MainEntity(String title, String description, LocalDate dueDate, Type type) {
         this.title = title;
         this.description = description;
