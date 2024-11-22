@@ -9,9 +9,9 @@
 		<relativePath/>
 	</parent>
 	<groupId>com.kanban</groupId>
-	<artifactId>kanban-task-manager</artifactId>
+	<artifactId>kanban-mainEntity-manager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>kanban-task-manager</name>
+	<name>kanban-mainEntity-manager</name>
 	<description>API para gerenciar tarefas em um quadro Kanban</description>
 	<url/>
 	<licenses>

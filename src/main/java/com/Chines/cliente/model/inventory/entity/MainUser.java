@@ -1,6 +1,7 @@
-package com.kanban.taskmanager.model.users;
+package com.Chines.cliente.model.inventory.entity;
 
 
+import com.Chines.cliente.model.inventory.UserRole;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -19,15 +20,15 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
-public abstract class User implements UserDetails {
+public abstract class MainUser implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
-    private String login;
-    private String password;
-    private UserRole role;
+    private String login; // nome
+    private String password; // numero
+    private UserRole role; // tipo
 
-    public User(String login, String password, UserRole role){
+    public MainUser(String login, String password, UserRole role){
         this.login = login;
         this.password = password;
         this.role = role;
@@ -67,4 +68,31 @@ public abstract class User implements UserDetails {
     public String getLogin() {
         return login;
     }
+
+//    public class Equipment {
+//
+//        @Id
+//        @GeneratedValue(strategy = GenerationType.UUID)
+//        private String id;
+//
+//        private String nomeEquipamento; // Nome do equipamento
+//
+//        private String numeroSerial; // Número de série do equipamento
+//
+//        @Enumerated(EnumType.STRING)
+//        private EquipmentType tipoEquipamento; // Tipo do equipamento (LAPTOP, MONITOR, IMPRESSORA)
+//
+//        @Enumerated(EnumType.STRING)
+//        private EquipmentStatus status; // Status do equipamento (DISPONIVEL, EM_USO, MANUTENCAO)
+//
+//        private String codigoFornecedor; // Código de referência ao fornecedor
+//
+//        public Equipment(String nomeEquipamento, String numeroSerial, EquipmentType tipoEquipamento, EquipmentStatus status, String codigoFornecedor) {
+//            this.nomeEquipamento = nomeEquipamento;
+//            this.numeroSerial = numeroSerial;
+//            this.tipoEquipamento = tipoEquipamento;
+//            this.status = status;
+//            this.codigoFornecedor = codigoFornecedor;
+//        }
+//    }
 }

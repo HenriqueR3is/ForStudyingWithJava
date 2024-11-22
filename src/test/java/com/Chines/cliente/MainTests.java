@@ -1,10 +1,10 @@
-package com.kanban.taskmanager;
+package com.Chines.cliente;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class KanbanTaskManagerApplicationTests {
+class MainTests {
 
 	@Test
 	void contextLoads() {

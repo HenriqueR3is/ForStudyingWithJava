@@ -1,4 +1,4 @@
-package com.kanban.taskmanager.model.users;
+package com.Chines.cliente.model.inventory;
 
 public enum UserRole {
     ADMIN("admin"),

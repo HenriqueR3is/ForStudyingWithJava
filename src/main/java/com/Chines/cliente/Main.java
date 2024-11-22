@@ -1,12 +1,12 @@
-package com.kanban.taskmanager;
+package com.Chines.cliente;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KanbanTaskManagerApplication {
+public class Main {
 
 	public static void main(String[] args) {
-		SpringApplication.run(KanbanTaskManagerApplication.class, args);
+		SpringApplication.run(Main.class, args);
 	}
 }
